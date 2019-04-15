@@ -31,7 +31,7 @@ body, html {
 
 /*Lines each image up below the other*/
 .bottomWaterBG {
-    background-image: url("images/IMG_2106.jpg");
+    background-image: url("images/IMG_2106.JPG");
     height: 100%;
 }
 
@@ -42,7 +42,7 @@ body, html {
 }
 
 .poolBG {
-    background-image: url("images/IMG_1935.jpg");
+    background-image: url("images/IMG_1935.JPG");
     min-height: 31.25em;
     max-height: 62.5em;
 }
