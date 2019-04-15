@@ -1,0 +1,78 @@
+/*Reset the browser's default settings*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+body, html {
+    height: 100%;
+    /*400 is normal weight, 1.8 is line-height*/
+    font: 400 1.125em/1.8 'Poppins', sans-serif;
+
+    /*Formatting the background*/
+    background-image: url("images/camper.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/*formats the position and features of the title*/
+.contactTitle {
+    margin-top: 350px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contactTitle h1 {
+    font-size: 32px;
+}
+
+.contactTitle h2 {
+    font-size: 16px;
+}
+
+/*for the contact form itself*/
+form {
+    margin-top: 50px;
+}
+
+.formControl {
+    width: 600px;
+    /*instead of being filled in white, the image shows through*/
+    background: transparent;
+    border: none;
+    outline: none;
+    /*use border bottom to create a line to write on*/
+    border-bottom: 1px solid white;
+    font-size: 18px;
+    margin-bottom: 16px;
+    padding-left: 5px;
+}
+
+input {
+    height: 45px;
+}
+
+/*offset from edge of form*/
+textarea {
+    padding-left: 5px;
+}
+
+#sendMessage {
+    background: #e6c900;
+    border-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}

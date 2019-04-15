@@ -1,0 +1,73 @@
+/*Reset the browser's default settings*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Apply to all content*/
+body, html {
+    height: 100%;
+    /*400 is normal weight, 1.8 is line-height*/
+    font: 400 1.125em/1.8 'Poppins', sans-serif;
+    background-color: #565F69;
+    color: white;
+}
+
+/*Relative positioning allows for overlay of the icon and text with absolute positioning*/
+.sloganAndIcon {
+    position: relative;
+}
+
+#firstReviewIcon {
+    position: absolute;
+    width: 20em;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.interest {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.75em;
+}
+
+/*Aligns all icons along the same horizontal plane*/
+.reviewIcon {
+    margin-top: 5em;
+    float: left;
+    width: 25%;
+    height: auto;
+    padding: 1em;
+}
+
+.paragraphs {
+    display: table;
+    width: 100%;
+}
+
+.review {
+    display: table-cell;
+}
+
+#review1 {
+    width: 25%;
+    padding: 1em;
+}
+
+#review2 {
+    width: 25%;
+    padding: 2em;
+}
+
+#review3 {
+    width: 25%;
+    padding: 1.5em;
+}
+
+#review4 {
+    width: 25%;
+    padding: 2em;
+}

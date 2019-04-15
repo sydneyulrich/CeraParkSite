@@ -1,0 +1,85 @@
+/*Reset the browser's default settings*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Apply to all content*/
+body, html {
+    height: 100%;
+    /*400 is normal weight, 1.8 is line-height*/
+    font: 400 20px/1.8 'Poppins', sans-serif;
+    background-color: #565F69;
+    color: white;
+}
+
+/*Top half of the web page*/
+.poolPic {
+    position: relative;
+    min-width: 100%;
+    max-width: 100%;
+    /*min-height: 100%;*/
+    /*max-height: 100%;*/
+}
+
+/*Aligns all icons along the same horizontal plane*/
+.aboutIcons {
+    margin-top: 5em;
+    float: left;
+    width: 25%;
+    height: auto;
+    padding: 1em;
+}
+
+#fishingIcon {
+    width: 23%;
+}
+
+/*Aligns all text along the same horizontal plane*/
+.paragraphs {
+    display: table;
+    width: 100%;
+}
+
+.info {
+    display: table-cell;
+}
+
+#campText {
+    width: 25%;
+    padding: 1em;
+}
+
+#poolText {
+    width: 25%;
+    padding: 2em;
+}
+
+#golfText {
+    width: 25%;
+    padding: 2em;
+}
+
+#fishText {
+    width: 25%;
+    padding: 2em;
+}
+
+.typewriterOverlay {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.typewriterInvite {
+    position: absolute;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 4em;
+    margin: 0 auto;
+    overflow: auto;
+    white-space: nowrap;
+    padding-left: 6em;
+}
