@@ -25,13 +25,13 @@ body, html {
 /*set first image below the fixed menu*/
 .topWaterBG {
     margin-top: 4.375em;
-    background-image: url("images/1.JPG");
+    background-image: url("images/wisconsinRiverView.JPG");
     min-height: 100%;
 }
 
 /*Lines each image up below the other*/
 .bottomWaterBG {
-    background-image: url("images/1.JPG");
+    background-image: url("images/wisconsinRiverView.JPG");
     height: 100%;
 }
 
@@ -42,7 +42,7 @@ body, html {
 }
 
 .poolBG {
-    background-image: url("images/2.JPG");
+    background-image: url("images/poolSlideCeraPark.JPG");
     min-height: 31.25em;
     max-height: 62.5em;
 }
