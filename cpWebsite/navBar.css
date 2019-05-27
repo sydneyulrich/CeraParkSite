@@ -79,15 +79,15 @@
 }
 
 @media screen and (max-width: 600px){
-    .navbar .responsive {
+    .navBarMenu .responsive {
         position: relative;
     }
-    .navbar .responsive a.icon{
+    .navBarMenu .responsive a.icon{
         position: absolute;
         right: 0;
         top: 0;
     }
-    .navbar .responsive a {
+    .navBarMenu .responsive a {
         float: none;
         display: block;
         text-align: left;

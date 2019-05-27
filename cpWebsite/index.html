@@ -16,9 +16,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <!--Nav Bar that appears when you start scrolling-->
-<div class="navbar" id="myNavBar">
+<div class="navbar">
     <a href="index.html" class="logo"><img src="images/CPlogoBlack.svg" alt="Cera Park Logo"></a>
-    <div class="navBarMenu">
+    <div class="navBarMenu" id="myNavBar">
         <a href="index.html" class="active">Home</a>
         <a href="about.html">About</a>
         <a href="photos.html">Photos</a>
@@ -88,10 +88,10 @@
 <script>
     function myFunction() {
         var x = document.getElementById("myNavBar");
-        if (x.className === "navbar") {
+        if (x.className === "navBarMenu") {
             x.className += " responsive";
         } else {
-            x.className = "navbar";
+            x.className = "navBarMenu";
         }
     }
 </script>
