@@ -15,7 +15,7 @@
 <body>
 
 <!--Nav Bar that appears when you start scrolling-->
-<div class="navbar">
+<div class="navbar" id="myNavBar">
     <a href="index.html" class="logo"><img src="images/CPlogoBlack.svg" alt="Cera Park Logo"></a>
     <div class="navBarMenu">
         <a href="index.html">Home</a>
@@ -24,6 +24,9 @@
         <a href="reviews.html">Reviews</a>
         <a href="contact.html">Contact Us</a>
         <a href="contact.html" id="lastMenuOption">Reserve</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
     </div>
 </div>
 
@@ -81,5 +84,15 @@
     </div>
 </div>
 
+<script>
+    function myFunction() {
+        var x = document.getElementById("myNavBar");
+        if (x.className === "navbar") {
+            x.className += " responsive";
+        } else {
+            x.className = "navbar";
+        }
+    }
+</script>
 </body>
 </html>
