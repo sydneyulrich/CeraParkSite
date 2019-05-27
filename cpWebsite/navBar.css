@@ -39,23 +39,18 @@
     padding-right: 1em;
 }
 
-#lastMenuOption {
-    background-color: #AAB2BA;
-    border:none;
-    color:black;
-    text-align: center;
-    text-decoration: none;
-    display:inline-block;
-    cursor: pointer;
-    border-radius: .25em;
+/*#lastMenuOption {*/
+    /*background-color: #AAB2BA;*/
+    /*border:none;*/
+    /*color:black;*/
+    /*text-align: center;*/
+    /*text-decoration: none;*/
+    /*display:inline-block;*/
+    /*cursor: pointer;*/
+    /*border-radius: .25em;*/
 
-}
+/*}*/
 
-/*added new */
-.active{
-    background-color: #e6c900;
-    color:white;
-}
 
 /* Hide the link that should open and close the topnav on small screens */
 .navbar .icon {
@@ -74,7 +69,7 @@
         /*float: none;*/
     /*}*/
 
-    .navbar a:not(:first-child){
+    .navbar a{
         display: none
     }
     .navbar a.icon{
