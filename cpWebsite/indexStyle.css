@@ -53,6 +53,10 @@ body, html {
     max-height: 62.5em;
 }
 
+#reserve{
+    text-decoration: none;
+    color: white;
+}
 
 .caption {
     position: absolute;
@@ -70,6 +74,7 @@ body, html {
     padding: 1.125em;
     font-size: 1.5625em;
     letter-spacing: 0.625em;
+    border-radius: .25em;
 }
 
 /*First block of text below first image*/
@@ -78,6 +83,8 @@ body, html {
     text-transform: uppercase;
     font: 1.25em 'Poppins', sans-serif;;
     color: #111;
+    border-radius: .25em;
+
 }
 
 .parags {

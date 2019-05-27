@@ -38,3 +38,15 @@
     padding-top: .75em;
     padding-right: 1em;
 }
+
+#lastMenuOption {
+    background-color: #AAB2BA;
+    border:none;
+    color:black;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    cursor: pointer;
+    border-radius: .25em;
+
+}
