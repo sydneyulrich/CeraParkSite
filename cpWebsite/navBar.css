@@ -51,6 +51,12 @@
 
 }
 
+/*added new */
+.active{
+    background-color: #e6c900;
+    color:white;
+}
+
 /* Hide the link that should open and close the topnav on small screens */
 .navbar .icon {
     display: none;
@@ -80,6 +86,9 @@
 @media screen and (max-width: 600px){
     .navbar .responsive {
         position: relative;
+    }
+    .navbar .responsive a.icon{
+        position: absolute;
         right: 0;
         top: 0;
     }
