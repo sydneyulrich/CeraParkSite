@@ -69,8 +69,8 @@
         /*float: none;*/
     /*}*/
 
-    .navbar a{
-        display: none
+    .navBarMenu a{
+        display: none;
     }
     .navbar a.icon{
         float:right;
