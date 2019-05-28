@@ -7,6 +7,7 @@
 /*Apply to all content*/
 body, html {
     height: 100%;
+    display: block;
     /*400 is normal weight, 1.8 is line-height*/
     font: 400 1.125em/1.8 'Poppins', sans-serif;
     background-color: #565F69;
