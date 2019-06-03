@@ -1,0 +1,66 @@
+/*Reset the browser's default settings*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Apply to all content*/
+body, html {
+    height: 100%;
+    font: 2.5vh 'Poppins', sans-serif;
+    background-color: #565F69;
+    color: white;
+
+}
+
+.fullScreenPic {
+    width: 100vw;
+    height: 100vh;
+    background: #565F69 url('images/dockViewCeraPark.JPG');
+    background-size: cover;
+    color: black;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.caption span.border {
+    background-color: #565F69;
+    color: #fff;
+    padding: 5vh;
+    font-size: 4vh;
+    padding-left:6vh;
+    letter-spacing: 1.5vh;
+    border-radius: 2vh;
+}
+
+a{
+    text-decoration:none;
+    color:#565F69;
+}
+
+a:hover{
+    color:#3B5998;
+}
+
+button{
+    width:20vh;
+    height:20vh;
+    text-align:center;
+    vertical-align:top;
+    border-radius:2vh;
+    margin:2vh;
+    font-size:2vh;
+
+}
+
+@media screen and (max-width: 1300px) {
+    button{
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}

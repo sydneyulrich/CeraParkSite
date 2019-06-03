@@ -1,0 +1,120 @@
+/*Reset the browser's default settings*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Apply to all content*/
+body, html {
+    height: 100%;
+    font: 2.5vh 'Poppins', sans-serif;
+    background-color: #565F69;
+    color: white;
+
+}
+
+.fullScreenPic {
+    width: 100vw;
+    height: 100vh;
+    background: #565F69 url('images/poolAndSlide2.JPG');
+    background-size: cover;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.caption span.border {
+    background-color: #565F69;
+    color: #fff;
+    padding: 5vh;
+    font-size: 4vh;
+    padding-left:6vh;
+    letter-spacing: 1.5vh;
+    border-radius: 2vh;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+}
+
+.contactInfo {
+    float:left;
+    width: 40%;
+    border-radius:1vh;
+    margin:2vh;
+    margin-top:2.25vh;
+    padding:1vh;
+ }
+
+.container{
+    float:left;
+    border-radius:1vh;
+    width: 50%;
+    margin:2vh;
+    font-size:2vh;
+    padding:1.5vh;
+
+}
+/* Style inputs, select elements and textareas */
+input[type=text], select, textarea{
+    background:transparent;
+    border:none;
+    outline:none;
+    border-bottom: 1px solid #FF6666;
+    width: 100%;
+    padding: 1.5vh;
+    /*box-sizing: border-box;*/
+    resize: vertical;
+    margin-top:1vh;
+}
+
+input, select, textarea{
+    color:white;
+    font-size:1.5vh;
+}
+
+::placeholder{
+    color:white;
+}
+/* Style the submit button */
+input[type=submit] {
+    background-color: #FF6666;
+    color: white;
+    padding: 2vh 3vh;
+    border: none;
+    border-radius: 1vh;
+    cursor: pointer;
+    float: right;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.map{
+    height:50%;
+}
+.map iframe {
+    /*position: absolute;*/
+    /*top: 0;*/
+    /*left: 0;*/
+    width: 100%;
+    height: 70%;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 900px) {
+    .container, .contactInfo {
+        margin-left:auto;
+        margin-right:auto;
+        width:100%;
+    }
+}
+

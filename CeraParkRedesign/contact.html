@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+    <link rel="stylesheet" type="text/css" href="contactCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Poppins", serif;
+        }
+    </style>
+
+    <title>Contact Us</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active" id="logo"><img src="images/CPlogoBlack.svg" alt="Cera Park Logo"></a>
+    <a href="about.html">About</a>
+    <a href="photos.html">Photos</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="forms.html">Forms</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html">Reserve</a>
+    <a href="https://www.facebook.com/CERA-Park-290884687751251/" class="fa fa-facebook"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="fullScreenPic">
+    <div class="caption">
+        <span class="border"><a id="clickToForm" href="#contactForm">CONTACT US</a></span>
+    </div>
+</div>
+
+
+<div class="contactInfo">
+    <p>Our camping season runs from the Friday before Memorial day until Labor Day. <br><br>For questions (in season),
+        call us at 715-422-3447
+        or fill out the form below to email us (year round).</p>
+    <p><br>For shelter reservations, please call 715-213-5571.</p>
+
+    <p><br>Hours in season: daily 9 am to 9 pm</p>
+</div>
+
+<div class="container" id="contactForm">
+    <form action="action_page.php">
+        <h1>Leave a comment or ask a question here.</h1>
+        <div class="row">
+            <div class="col">
+                <input type="text" id="name" name="name" placeholder="Your name...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <input type="text" id="email" email="email" placeholder="Your email...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            </div>
+        </div>
+        <div class="row">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5696.558789750517!2d-89.7348606243004!3d44.44794186711906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880060e69aaaaaab%3A0x97460c4d7a5e7f94!2sCera+Park!5e0!3m2!1sen!2sus!4v1559604597650!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>

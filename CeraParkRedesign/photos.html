@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+    <link rel="stylesheet" type="text/css" href="photosCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family:"Poppins", serif;
+        }
+    </style>
+
+    <title>Photos</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active" id="logo"><img class="myImg" src="images/CPlogoBlack.svg" alt="Cera Park Logo"></a>
+    <a href="about.html">About</a>
+    <a href="photos.html">Photos</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="forms.html">Forms</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html">Reserve</a>
+    <a href="https://www.facebook.com/CERA-Park-290884687751251/" class="fa fa-facebook"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="fullScreenPic">
+    <div class="caption">
+        <span class="border">PHOTOS</span>
+    </div>
+</div>
+
+<div class="row">
+    <div class="column">
+        <img class="myImg" src="images/ceraParkSignage.JPG">
+        <img class="myImg" src="images/babyGeeseCeraPark.JPG">
+        <img class="myImg" src="images/dockAndWIRiver.JPG">
+        <img class="myImg" src="images/smallShelter.jpg">
+        <img class="myImg" src="images/firewoodCeraPark.JPG">
+        <img class="myImg" src="images/miniGolfBroaderView.JPG">
+        <img class="myImg" src="images/poolAndSlide.JPG">
+        <img class="myImg" src="images/mushroomCeraPark.jpg">
+    </div>
+    <div class="column">
+        <img class="myImg" src="images/playground2CeraPark.jpg">
+        <img class="myImg" src="images/shelterCeraPark.JPG">
+        <img class="myImg" src="images/swimmingPool.jpg">
+        <img class="myImg" src="images/water.jpg">
+        <img class="myImg" src="images/playgroundCeraPark2.jpg">
+        <img class="myImg" src="images/poolLayoutView.JPG">
+        <img class="myImg" src="images/mushroomSprinklerCeraPark.JPG">
+        <img class="myImg" src="images/dockViewCeraPark.JPG">
+    </div>
+    <div class="column">
+        <img class="myImg" src="images/miniGolfCeraPark.JPG">
+        <img class="myImg" src="images/campgrounds.jpg">
+        <img class="myImg" src="images/basketballCourtCeraPark.jpg">
+        <img class="myImg" src="images/poolAndSlide2.JPG">
+        <img class="myImg" src="images/miniGolfCeraPark2.JPG">
+        <img class="myImg" src="images/treeTrunkAndCampsite.JPG">
+        <img class="myImg" src="images/picnicTableSolitude.JPG">
+        <img class="myImg" src="images/bathrooms.JPG">
+    </div>
+    <div class="column">
+        <img class="myImg" src="images/gatehouse.JPG">
+        <img class="myImg" src="images/miniGolfCeraPark3.JPG">
+        <img class="myImg" src="images/poolSlideCeraPark.JPG">
+        <img class="myImg" src="images/tables.png">
+        <img class="myImg" src="images/creekCeraPark.jpg">
+        <img class="myImg" src="images/playgroundCeraPark.JPG">
+        <img class="myImg" src="images/wisconsinRiverView.JPG">
+        <img class="myImg" src="images/docksCeraPark.jpg">
+    </div>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- The Close Button -->
+        <span class="close">&times;</span>
+
+        <!-- Modal Content (The Image) -->
+        <img class="modal-content" id="img01">
+
+    </div>
+
+
+</div>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+    var modal = document.getElementById("myModal");
+    var i;
+
+    var img = document.getElementsByClassName("myImg");
+    var modalImg = document.getElementById("img01");
+
+    for(i=0;i< img.length;i++)
+    {
+        img[i].onclick = function(){
+
+            modal.style.display = "block";
+            modalImg.src = this.src;
+
+        }
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Reset the browser's default settings*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*Apply to all content*/
+body, html {
+    height: 100%;
+    font: 2.5vh 'Poppins', sans-serif;
+    background-color: #565F69;
+    color: white;
+
+}
+
+.fullScreenPic {
+    width: 100vw;
+    height: 100vh;
+    background: #565F69 url('images/treeTrunkAndCampsite.JPG');
+    background-size: cover;
+    color: black;
+    font-size: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.caption span.border {
+    background-color: #565F69;
+    color: #fff;
+    padding: 5vh;
+    font-size: 4vh;
+    padding-left:6vh;
+    letter-spacing: 1.5vh;
+    border-radius: 2vh;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4vh;
+    margin-top: 20vh;
+    text-align: left;
+}
+
+.column img {
+    margin-left:auto;
+    margin-right:auto;
+    height:24%;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1300px) {
+    .column {
+        flex: 49%;
+        max-width: 49%;
+    }
+    .column img{
+        height:40%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        flex: 49%;
+        max-width: 49%;
+    }
+    .column img{
+        height:30%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 825px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .column img{
+        height:40%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .typewriterInvite{
+        font-size:2.5vh;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .typewriterInvite{
+        font-size: 2vh;
+    }
+}

@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+    <link rel="stylesheet" type="text/css" href="formsCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family:"Poppins", serif;
+        }
+    </style>
+
+    <title>Forms</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active" id="logo"><img src="images/CPlogoBlack.svg"  alt="Cera Park Logo"></a>
+    <a href="about.html">About</a>
+    <a href="photos.html">Photos</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="forms.html">Forms</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html">Reserve</a>
+    <a href="https://www.facebook.com/CERA-Park-290884687751251/" class="fa fa-facebook"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="fullScreenPic">
+    <div class="caption">
+        <span class="border"> FORMS</span>
+    </div>
+</div>
+
+<div class="forms">
+    <button><a class="square" href="forms/CeraParkMap.pdf">Campground Map</a></button>
+    <button><a class="square" href="forms/2019Newsletter.pdf">2019 Cera Park Newsletter</a></button>
+    <button><a class="square" href="forms/ParkRegulations.pdf">Park Regulations</a></button>
+    <button><a class="square" href="forms/CampgroundSiteIndex.pdf">Site Index</a></button>
+    <button><a class="square" href="forms/ShelterRentalApp.pdf">Shelter Rental Application</a></button>
+    <button><a class="square" href="forms/LargeShelterPrivateRules.pdf">Large Shelter Rules</a></button>
+    <button><a class="square" href="forms/smallShelterPrivateRules.pdf">Small Shelter Rules</a></button>
+</div>
+
+
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>

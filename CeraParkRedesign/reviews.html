@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+    <link rel="stylesheet" type="text/css" href="reviewsCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family:"Poppins", serif;
+        }
+    </style>
+
+    <title>Reviews</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active" id="logo"><img src="images/CPlogoBlack.svg" alt="Cera Park Logo"></a>
+    <a href="about.html">About</a>
+    <a href="photos.html">Photos</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="forms.html">Forms</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html">Reserve</a>
+    <a href="https://www.facebook.com/CERA-Park-290884687751251/" class="fa fa-facebook"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<div class="fullScreenPic">
+    <div class="caption">
+        <span class="border">REVIEWS</span>
+    </div>
+</div>
+<div class="row">
+    <div class="column">
+        <img class="aboutIcons" src="images/reviewsIcon.png" alt="text bubble icon"/>
+        <p class="reviews" id="review1"><br>Cera Park is a wonderful campground! We camped there many nights when our kids were
+            little. We also camped there this summer! Very well taken care of! Thank you to everyone on the board for keeping it going every year.
+            <br><br> -Dan and Lana</p>
+    </div>
+
+    <div class="column">
+        <img class="aboutIcons" src="images/reviewsIcon.png" alt="text bubble icon"/>
+        <p class="reviews" id="review2"><br>It was my first time going to Cera Park. My grandkids really liked it. I love the
+            idea of having three sizes of pools. That's awesome. Definitely going back. <br><br> -Magdalena</p>
+    </div>
+
+    <div class="column">
+        <img class="aboutIcons" src="images/reviewsIcon.png" alt="text bubble icon"/>
+        <p class="reviews" id="review3"><br>Great spot to camp! Clean with decent facilities! Swimming pool is great for the
+            family to enjoy. Friendly, responsive staff too. Sites are reasonably level with fire rings and picnic tables, 30 amp service.
+            <br><br> -Buzz</p>
+    </div>
+
+    <div class="column">
+        <img class="aboutIcons" src="images/reviewsIcon.png" alt="text bubble icon"/>
+        <p class="reviews" id="review4"><br>Cera Park is a good place to camp, and they have direct access to the river. There
+            are several boat
+            landings and the water is shallow for over 200 yards. It's a good place to take a canoe out on the river.
+            <br><br> -Alfred</p>
+    </div>
+
+</div>
+
+
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+</body>
+</html>
