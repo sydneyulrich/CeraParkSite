@@ -57,10 +57,30 @@ button{
 
 }
 
-@media screen and (max-width: 1300px) {
-    button{
-        display:block;
-        margin-left:auto;
-        margin-right:auto;
+.col{
+    float:left;
+    width:25%;
+
+}
+
+.row:after{
+    content: "";
+    display:table;
+    clear:both;
+}
+
+@media screen and (max-width: 900px) {
+    .col {
+        float:left;
+        width: 50%;
     }
+
+}
+
+@media screen and (max-width: 600px) {
+    .col {
+        float:left;
+        width: 100%;
+    }
+
 }
