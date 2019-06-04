@@ -23,6 +23,9 @@ body, html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
 
 }
 /*set first image below the fixed menu*/
@@ -40,7 +43,7 @@ body, html {
 }
 
 #bg4 {
-    background-image: url("images/tables.png");
+    background-image: url("images/stringLights.jpg");
 }
 #bg5 {
     background-image: url("images/wisconsinRiverView.JPG");
