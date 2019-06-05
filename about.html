@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+    <link rel="stylesheet" type="text/css" href="aboutCSS.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-family: "Poppins", serif;
+        }
+    </style>
+
+    <title>About</title>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active" id="logo"><img src="images/CPlogoBlack.svg" alt="Cera Park Logo"></a>
+    <a href="about.html">About</a>
+    <a href="photos.html">Photos</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="forms.html">Forms</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html">Reserve</a>
+    <a href="https://www.facebook.com/CERA-Park-290884687751251/" class="fa fa-facebook"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+
+<!--background-->
+<div class="fullScreenPic">
+<div class="typewriterInvite">
+    <h1>Come
+        <span
+                class="textRotate"
+                data-period="00"
+                data-rotate='["stay", "swim", "fish", "boat", "grill", "play", "explore", "camp"]'>
+
+                    </span>
+        with us.</h1>
+</div>
+</div>
+<div class="row">
+    <div class="column">
+        <img id="camperSection" class="aboutIcons" src="images/camperIcon.png" alt="Icon of a camper van"/>
+        <p class="info" id="campText"><br>We offer a range of campsites, from primitive to electric. Our differing
+        lot sizes allow for all camper sizes. Our showers and restrooms are located at the heart of the campground, for close
+        proximity to every campsite.</p>
+    </div>
+
+    <div class="column">
+        <img id="swimmingSection" class="aboutIcons" src="images/swimmingIcon.png" alt="icon of a swimming pool"/>
+        <p class="info" id="poolText"><br>Come out and swim in one of our lifeguard-monitored pools. We have a large pool,
+            slides and a kiddie pool. Pool use is included with your stay!</p>
+    </div>
+
+    <div class="column">
+        <img id="miniGolfSection" class="aboutIcons" src="images/miniGolfIcon.png" alt="icon of a mini golf course"/>
+        <p class="info" id="golfText"><br>Looking for something new to do while camping? Try out one of our many amenities:
+            including 18 holes of mini-golf, a ball field and multiple playgrounds throughout Cera Park.</p>
+    </div>
+
+    <div class="column">
+        <img id="fishingSection" class="aboutIcons" src="images/fishingIcon.png" alt="icon of a fish and hook"/>
+        <p class="info" id="fishText"><br>Try your hand at fishing on the Wisconsin River. Whether you're fishing from shore,
+            off one of our nine docks, or bring your own boat, we have a prime location to reel in your next fish!</p>
+    </div>
+
+</div>
+
+<script>
+    /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+
+    var TxtRotate = function (el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function () {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+            this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+            this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">' + this.txt + '</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) {
+            delta /= 2;
+        }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+            delta = this.period;
+            this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+            this.isDeleting = false;
+            this.loopNum++;
+            delta = 500;
+        }
+
+        setTimeout(function () {
+            that.tick();
+        }, delta);
+    };
+
+    window.onload = function () {
+        var elements = document.getElementsByClassName('textRotate');
+        for (var i = 0; i < elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-rotate');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+                new TxtRotate(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+// INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".txtRotate > .wrap { border-right: 0.8em solid #666 }";
+        document.body.appendChild(css);
+    };
+</script>
+</body>
+</html>

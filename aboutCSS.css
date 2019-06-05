@@ -1,0 +1,119 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Reset the browser's default settings*/
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*parallax scrolling effect where images stay put. Applied to all 4 images*/
+
+/*Apply to all content*/
+body, html {
+    height: 100%;
+    font: 2.5vh 'Poppins', sans-serif;
+    background-color: #565F69;
+    color: white;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    flex: 24%;
+    max-width: 24%;
+    padding: 0 4vh;
+    margin-top: 20vh;
+    text-align: left;
+}
+
+.column img {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 8px;
+    height:24%;
+}
+
+.fullScreenPic {
+    width: 100vw;
+    height: 100vh;
+    background: #565F69 url('images/stringLights.jpg');
+    background-size: cover;
+
+}
+
+.typewriterInvite {
+    color: white;
+    font-size: 3vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 90vh;
+}
+
+
+/*Top half of the web page*/
+.poolPic {
+    position: absolute;
+    height:100%;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1300px) {
+    .column {
+        flex: 49%;
+        max-width: 49%;
+    }
+    .column img{
+        height:40%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .column {
+        flex: 49%;
+        max-width: 49%;
+    }
+    .column img{
+        height:30%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+    .column img{
+        height:40%;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .typewriterInvite{
+        font-size:2.5vh;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+   .typewriterInvite{
+       font-size: 2vh;
+   }
+    #camperSection{
+        width:90%;
+    }
+}
