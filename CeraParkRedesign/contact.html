@@ -14,6 +14,9 @@
     </style>
 
     <title>Contact Us</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+
 </head>
 <body>
 
@@ -48,31 +51,39 @@
 </div>
 
 <div class="container" id="contactForm">
-    <form action="action_page.php">
+    <form method="post" action="action_page.php" enctype="multipart/form-data">
         <h1>Leave a comment or ask a question here.</h1>
         <div class="row">
             <div class="col">
-                <input type="text" id="name" name="name" placeholder="Your name...">
+                <input type="text" id="name" name="name" placeholder="Your name..." required>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <input type="text" id="email" email="email" placeholder="Your email...">
+                <input type="text" id="email" name="email" placeholder="Your email..." required>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                <textarea id="subject" name="message" placeholder="Write something.." required
+                          style="height:200px"></textarea>
             </div>
         </div>
+
+        <div class="captcha_wrapper" ?>
+            <div class="g-recaptcha" data-sitekey="6Le8L6cUAAAAACZGps5GEcem-O4xcmpOD2MoFx_G"></div>
+        </div>
+
         <div class="row">
             <input type="submit" value="Submit">
         </div>
     </form>
 </div>
 
+
 <div class="map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5696.558789750517!2d-89.7348606243004!3d44.44794186711906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880060e69aaaaaab%3A0x97460c4d7a5e7f94!2sCera+Park!5e0!3m2!1sen!2sus!4v1559604597650!5m2!1sen!2sus" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5696.558789750517!2d-89.7348606243004!3d44.44794186711906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880060e69aaaaaab%3A0x97460c4d7a5e7f94!2sCera+Park!5e0!3m2!1sen!2sus!4v1559604597650!5m2!1sen!2sus"
+            width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 
 <script>
@@ -87,13 +98,6 @@
     }
 
 </script>
-<script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
-<script>
-    grecaptcha.ready(function() {
-        grecaptcha.execute('reCAPTCHA_site_key', {action: 'homepage'}).then(function(token) {
-        ...
-        });
-    });
-</script>
+
 </body>
 </html>

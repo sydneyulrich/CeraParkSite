@@ -47,6 +47,7 @@ a:hover{
 }
 
 button{
+    background-color:white;
     width:20vh;
     height:20vh;
     text-align:center;

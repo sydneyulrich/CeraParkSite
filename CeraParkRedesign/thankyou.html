@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="navBar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        /*Reset the browser's default settings*/
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /*Apply to all content*/
+        body, html {
+            height: 100%;
+            font: 2vh 'Poppins', sans-serif;
+            background-color: #565F69;
+            color: white;
+        }
+
+        .thanks {
+            margin-top: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30vh;
+        }
+
+        .fullScreenPic {
+            width: 100vw;
+            height: 100vh;
+            background: #565F69 url('images/dockViewCeraPark.JPG');
+            background-size: cover;
+            color: #FF6666;
+            font-size: 2vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+    <title>Thank You Page</title>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="index.html" class="active" id="logo"><img src="images/CPlogoBlack.svg" alt="Cera Park Logo"></a>
+    <a href="about.html">About</a>
+    <a href="photos.html">Photos</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="forms.html">Forms</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="contact.html">Reserve</a>
+    <a href="https://www.facebook.com/CERA-Park-290884687751251/" class="fa fa-facebook"></a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+
+<div class="fullScreenPic">
+    <div class="thanks">
+        <h1>Thanks for contacting Cera Park!</h1>
+        <p>We will respond as quickly as possible.</p>
+        <p><a href="contact.html">Back</a></p>
+    </div>
+</div>
+
+</body>
+</html>
