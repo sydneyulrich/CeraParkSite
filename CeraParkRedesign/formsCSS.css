@@ -78,11 +78,3 @@ button{
 
 }
 
-@media screen and (max-width: 600px) {
-    .col {
-        margin-left:auto;
-        margin-right:auto;
-        width: 100vh;
-    }
-
-}
