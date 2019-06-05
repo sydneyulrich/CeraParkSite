@@ -78,20 +78,29 @@ body, html {
     padding: 15vh 2vh 15vh 2vh;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 900px) {
     #bg1{
-        background-image: url("images/wisconsinRiverViewMobile.jpg");
+        background-image: url("images/wisconsinRiverView.jpg");
+        background-size:cover;
     }
     #bg2{
-        background-image: url("images/camperMobile.jpg");
+        background-image: url("images/camper.jpg");
+        background-size:cover
+
     }
     #bg3{
-        background-image: url("images/poolSlideCeraParkMobile.jpg");
+        background-image: url("images/poolSlideCeraPark.jpg");
+        background-size:cover;
+
     }
     #bg4{
         background-image: url("images/stringLights.jpg");
+        background-size:cover;
+
     }
     #bg5{
-        background-image: url("images/wisconsinRiverViewMobile.jpg");
+        background-image: url("images/wisconsinRiverView.jpg");
+        background-size:cover;
+
     }
 }
