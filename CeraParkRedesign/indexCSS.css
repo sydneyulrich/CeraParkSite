@@ -82,5 +82,16 @@ body, html {
     #bg1{
         background-image: url("images/wisconsinRiverViewMobile.jpg");
     }
-
+    #bg2{
+        background-image: url("images/camperMobile.jpg");
+    }
+    #bg3{
+        background-image: url("images/poolSlideCeraParkMobile.jpg");
+    }
+    #bg4{
+        background-image: url("images/stringLights.jpg");
+    }
+    #bg5{
+        background-image: url("images/wisconsinRiverViewMobile.jpg");
+    }
 }
