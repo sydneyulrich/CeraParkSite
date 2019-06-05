@@ -77,3 +77,10 @@ body, html {
     text-align: center;
     padding: 15vh 2vh 15vh 2vh;
 }
+
+@media screen and (max-width: 650px) {
+    #bg1{
+        background-image: url("images/wisconsinRiverViewMobile.jpg");
+    }
+
+}
